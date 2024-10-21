@@ -46,11 +46,30 @@
         }
 
         .Rain {
-          display: flex;
-          justify-content: center;
-
-          img {
-            width: 50%;
+          display: block;
+          width: 300px;
+          height: 200px;
+          overflow: hidden;
+          position: relative;
+          margin: auto;
+          .Drop {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7));
+            top: -10px;
+            animation: fall 3s linear infinite;
+            opacity: 1;
+          }
+          @keyframes fall {
+            0% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(200px);
+              opacity: 1;
+            }
           }
         }
 
@@ -214,19 +233,13 @@
     }
     .Back {
       position: absolute;
-      top: 30px;
+      top: 5px;
       left: 10px;
-      button {
-        background-color: none;
-        border: none;
-        width: 90px;
-        height: 30px;
-        background-color: #ffba55;
-        color: #000;
-        font-size: 16px;
-        font-style: italic;
-        font-weight: 600;
-        border-radius: 10px;
+      h2 {
+        color: #ffba55;
+        display: flex;
+        align-items: center;
+        gap: 7px;
       }
     }
   }

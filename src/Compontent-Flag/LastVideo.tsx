@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Style from "./LastVideo.module.scss";
-import rain from "../img/rain-removebg-preview.png";
+import Barish from "../img/drop-removebg-preview.png";
 interface ILast {
   lastVideo: any;
   setLastVideo: any;
@@ -12,20 +12,15 @@ const LastVideo: React.FC<ILast> = ({
   setLastVideo,
   handleBackclick,
 }) => {
-  //   const [formData, setFormData] = useState({
-  //     name: "",
-  //     whatsapp: "",
-  //     email: "",
-  //   });
-
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
 
   const toggleMute = () => {
     if (videoRef.current) {
-      const newMutedState = !isMuted;
-      videoRef.current.muted = newMutedState;
-      setIsMuted(newMutedState);
+      setIsMuted((prev) => !prev);
+      if (videoRef.current) {
+        videoRef.current.muted = !isMuted;
+      }
     }
   };
 
@@ -62,6 +57,26 @@ const LastVideo: React.FC<ILast> = ({
       setError2("");
     }
   };
+  const NUM_DROPS = 60;
+  const RainDrop = () => {
+    return (
+      <>
+        {Array.from({ length: NUM_DROPS }).map((_, index) => (
+          <img
+            key={index}
+            src={Barish}
+            alt="RainDrop"
+            className={Style.Drop}
+            style={{
+              animationDelay: `${Math.random() * 3}s`,
+              left: `${Math.random() * 100}%`,
+            }}
+          />
+        ))}
+      </>
+    );
+  };
+
   return (
     <>
       {lastVideo && (
@@ -76,9 +91,8 @@ const LastVideo: React.FC<ILast> = ({
                   />
                 </div>
                 <div className={Style.Rain}>
-                  <img src={rain} alt="" />
+                  <RainDrop />
                 </div>
-
                 <div className={Style.formdisk}>
                   <form onSubmit={handleSubmit}>
                     <div className={Style.FormDisk}>
@@ -144,8 +158,8 @@ const LastVideo: React.FC<ILast> = ({
                   ></source>
                 </video>
               </div>
-              <div className={Style.Muted}>
-                <button onClick={toggleMute}>
+              <div className={Style.Muted} onClick={toggleMute}>
+                <button>
                   {isMuted ? (
                     <i className="fa-solid fa-volume-xmark"></i>
                   ) : (
@@ -154,7 +168,13 @@ const LastVideo: React.FC<ILast> = ({
                 </button>
               </div>
               <div className={Style.Back} onClick={handleBackclick}>
-                <button> Back</button>
+                <h2>
+                  <img
+                    src="https://dvf7opio6knc7.cloudfront.net/satyugImages/left-arrow.png"
+                    alt=""
+                  />
+                  Back
+                </h2>
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
-.Video {
+.Darshan {
   display: block;
-  position: fixed;
   width: 100%;
-  .VideoDisk {
+  position: fixed;
+  .Darshanbar {
     display: block;
     position: relative;
     width: 100%;
@@ -13,14 +13,15 @@
       object-fit: cover;
     }
   }
-  .Skhip {
+  .Darshanskhip {
     position: absolute;
     right: 30px;
     bottom: 10px;
+    background: url("https://dvf7opio6knc7.cloudfront.net/satyugImages/btn-bg.png");
 
     button {
-      width: 100px;
-      height: 50px;
+      width: 270px;
+      height: 72px;
       font-size: 22px;
       text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
       font-style: italic;
@@ -33,10 +34,10 @@
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
-  .Video {
+  .Darshan {
     display: block;
     width: 100%;
-    .VideoDisk {
+    .Darshanbar {
       display: block;
       width: 100%;
       video {
@@ -44,7 +45,7 @@
         height: 100vh;
       }
     }
-    .Skhip {
+    .Darshanskhip {
       bottom: 70px;
     }
   }

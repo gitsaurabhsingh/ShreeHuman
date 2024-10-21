@@ -14,6 +14,11 @@ const ShreeHuman: React.FC<IType> = ({ videoDisk, SetVideoDisk }) => {
     setMandirbar(false);
     setMandirDiskbar(true);
   };
+
+  const handleMandirEnd = () => {
+    setMandirbar(false);
+    setMandirDiskbar(true);
+  };
   return (
     <>
       {mandirbar && (
@@ -21,7 +26,7 @@ const ShreeHuman: React.FC<IType> = ({ videoDisk, SetVideoDisk }) => {
           {videoDisk && (
             <div className={Style.Video}>
               <div className={Style.VideoDisk}>
-                <video autoPlay>
+                <video autoPlay onEnded={handleMandirEnd}>
                   <source
                     src="https://dvf7opio6knc7.cloudfront.net/satyugvideos/before-game-480.mp4"
                     type="video/mp4"
