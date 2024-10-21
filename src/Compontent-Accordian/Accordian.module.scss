@@ -1,0 +1,149 @@
+.Tab {
+  background-image: url("https://www.digitalrammandir.com/wp-content/uploads/2023/12/section-4.jpg");
+  background-size: cover;
+  background-position: 100%;
+  padding-top: 50px;
+  .wrapper {
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 150px;
+    .title {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: flex-start;
+      h2 {
+        font-size: 50px;
+        color: #ffd08b;
+        margin: 0;
+        padding: 0;
+        text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+        font-style: italic;
+      }
+    }
+    p {
+      font-size: 19px;
+      line-height: 28px;
+      color: #fff;
+      margin: 0;
+      font-weight: 500;
+      padding: 25px 0px;
+      font-style: italic;
+      text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+    }
+    .tabItem {
+      margin-top: 20px;
+      .Content {
+        border: solid 1px #ddd;
+        padding: 25px 20px;
+        border-radius: 20px;
+        position: relative;
+        height: 84px;
+        overflow: hidden;
+        transition: 0.6s;
+        cursor: pointer;
+        margin-top: 40px;
+        &.open {
+          height: 270px;
+        }
+        &.open:nth-child(2) {
+          height: 285px;
+        }
+        &.open:nth-child(3) {
+          height: 295px;
+        }
+        &.open:nth-child(4) {
+          height: 180px;
+        }
+        &.open:nth-child(5) {
+          height: 205px;
+        }
+        &.open::after {
+          content: url("https://digitalrammandir.com/wp-content/uploads/2023/12/minus.png");
+        }
+        &::after {
+          content: url("https://www.digitalrammandir.com/wp-content/uploads/2023/12/add.png");
+          position: absolute;
+          right: 33px !important;
+          top: 40px;
+          transform: translateY(-50%);
+        }
+        &::before {
+          content: "Q";
+          position: absolute;
+          color: #ffd08a;
+          left: 15px;
+          font-size: 26px;
+          line-height: 40px;
+          font-weight: 400;
+          transform: translateY(-50%);
+          top: 40px;
+        }
+        h2 {
+          font-size: 25px;
+          color: #fff;
+          font-style: italic;
+          margin: 0;
+          padding: 0px 25px;
+        }
+        p {
+          font-size: 19px;
+          line-height: 28px;
+          color: #fff;
+          margin: 0;
+          font-weight: 500;
+          height: 212px;
+          font-style: italic;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+          a {
+            color: #ffd08a;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .Tab {
+    display: block;
+    padding: 0px 15px;
+    .wrapper {
+      width: 100%;
+      padding-bottom: 70px;
+      .title {
+        span {
+          min-width: 50px;
+          min-width: 50px;
+          max-width: 50px;
+          max-width: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .tabItem {
+        margin-top: 20px;
+        .Content {
+          height: auto;
+          overflow-y: scroll;
+          scrollbar-width: none;
+          &::after {
+            right: 10px !important;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          &.open {
+            height: auto !important;
+          }
+        }
+      }
+    }
+  }
+}

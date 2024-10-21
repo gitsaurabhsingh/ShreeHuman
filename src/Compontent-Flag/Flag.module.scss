@@ -1,0 +1,151 @@
+.overlay {
+  background-image: url("https://dvf7opio6knc7.cloudfront.net/satyugImages/login-bg.webp");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+
+  .wrapper {
+    width: 900px;
+    margin: 70px auto;
+    height: 100vh;
+    position: relative;
+    z-index: 999;
+    padding: 42px;
+    &::before {
+      position: fixed;
+      top: 0;
+      content: "";
+      width: 100%;
+      background-image: url("https://dvf7opio6knc7.cloudfront.net/satyugImages/login-bg-overlay.webp");
+      height: 100%;
+      left: 0;
+    }
+    .image {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #221509, #221509) padding-box,
+        linear-gradient(180deg, #ffba55 1.32%, #ffba5530 48.44%, #ffba55 93.51%)
+          border-box;
+      border: 2px solid #0000;
+      position: relative;
+      z-index: 9;
+      padding: 40px 0px;
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      &::after {
+        background-color: #221509;
+        content: "";
+        height: 4rem;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        translate: -50% -0.2rem;
+        width: 20rem;
+        z-index: -1;
+      }
+      .firstImg {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 20rem;
+        left: 50%;
+        translate: -50% -2.9rem;
+        img {
+          width: 100%;
+        }
+      }
+      .secondIMg {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .divide {
+        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 65%;
+        margin: auto;
+        h2 {
+          font-size: 40px;
+          text-align: center;
+          color: #ffba55;
+          margin: 0;
+          padding: 0;
+          font-weight: 500;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+          font-style: italic;
+        }
+      }
+      .button {
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        left: 0;
+        display: block;
+        text-align: center;
+        button {
+          background: url("https://dvf7opio6knc7.cloudfront.net/satyugImages/btn-bg.png");
+          height: 55px;
+          background-position: 100%;
+          background-size: cover;
+          border: none;
+          max-width: 230px;
+          min-width: 230px;
+          font-style: italic;
+          color: #fff;
+          font-size: 24px;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+          transition: 0.6s;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1200px) {
+  .overlay {
+    display: block;
+
+    .wrapper {
+      width: 100%;
+      display: block;
+      padding: 53px 0px;
+      height: auto;
+      .image {
+        &::after {
+          width: 15rem;
+        }
+        .firstImg {
+          width: 15rem;
+          top: 9px;
+        }
+        .divide {
+          width: 96%;
+          gap: 10px;
+          padding: 0px 10px;
+          span {
+            img {
+              width: 50px;
+              height: 50px;
+              object-fit: contain;
+            }
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

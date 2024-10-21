@@ -1,0 +1,366 @@
+.RoadHead {
+  background-size: contain;
+  background-position: center bottom 0px;
+  background-image: url(http://digitalrammandir.com/wp-content/uploads/2023/12/section-3.jpg) !important;
+
+  .wrapper {
+    width: 1150px;
+    margin: 0 auto;
+    .title {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: flex-start;
+      padding-top: 30px;
+      h2 {
+        font-size: 50px;
+        color: #ffd08b;
+        margin: 0;
+        padding: 0;
+        text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+        font-style: italic;
+      }
+    }
+    .Roadjanyuary {
+      display: flex;
+      justify-content: space-between;
+      width: 800px;
+      margin: auto;
+      .RoadFlex {
+        display: block;
+        width: 25%;
+        h4 {
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #ffffff !important;
+          font-style: italic;
+          line-height: 25px;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+          text-align: center;
+        }
+        h3 {
+          font-size: 26px;
+          color: #ffba55 !important;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          font-style: italic;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        }
+        h5 {
+          font-size: 24px;
+          color: #ffba55 !important;
+          line-height: 28px;
+          text-align: center;
+          font-style: italic;
+          margin: 5px;
+          padding: 0;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        }
+      }
+      .RoadText {
+        display: block;
+        width: 33%;
+        h4 {
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #ffffff !important;
+          font-style: italic;
+          line-height: 25px;
+          text-align: center;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        }
+        h3 {
+          font-size: 26px;
+          color: #ffba55 !important;
+          text-align: center;
+          font-style: italic;
+          margin: 0;
+          padding: 0;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        }
+        h5 {
+          font-size: 24px;
+          color: #ffba55 !important;
+          line-height: 28px;
+          text-align: center;
+          font-style: italic;
+          margin: 5px;
+          padding: 0;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        }
+      }
+    }
+    .RoadArrow {
+      display: block;
+      width: 100%;
+      padding-top: 50px;
+      img {
+        width: 100%;
+      }
+    }
+    .RoadArrowdisk {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      .RoadDisk {
+        width: 22%;
+        display: block;
+        h2 {
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #ffffff !important;
+          font-style: italic;
+          line-height: 25px;
+          text-align: center;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+          margin: 10px;
+          padding: 0;
+        }
+        h3 {
+          font-size: 26px;
+          color: #ffba55;
+          text-align: center;
+          font-style: italic;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+          margin: 0;
+          padding: 0;
+        }
+        h4 {
+          font-size: 20px;
+          color: #ffba55;
+          text-align: center;
+          font-style: italic;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          font-size: 18px;
+          color: #ddd;
+          font-style: italic;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+          text-align: center;
+          margin: 6px;
+        }
+      }
+    }
+    .India {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+      gap: 40px;
+      .IndiaGirl {
+        width: 48%;
+        display: block;
+        img {
+          width: 100%;
+          min-height: 440px;
+          object-fit: cover;
+          border-radius: 7px;
+        }
+      }
+      .Blog {
+        display: block;
+        width: 48%;
+        .BLogText {
+          display: flex;
+          justify-content: space-between;
+          .Blogdisk {
+            display: block;
+            h1 {
+              font-size: 55px;
+              font-weight: bold;
+              color: #ffba55;
+              font-style: italic;
+              text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+              margin: -23px 0px;
+              padding: 0;
+            }
+          }
+          .BlogView {
+            display: block;
+            margin-top: 11px;
+            a {
+              color: #ffd08b;
+              border: 1px solid #ffd08b;
+              padding: 12px 15px;
+              font-size: 20px;
+              border-radius: 26px;
+              text-decoration: none;
+            }
+          }
+        }
+        .BlogMandir {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 25px;
+          .BlogRam {
+            display: block;
+            width: 27%;
+            img {
+              width: 100%;
+            }
+          }
+          .BlogCulture {
+            display: block;
+            width: 68%;
+            h2 {
+              font-size: 18px;
+              font-style: italic;
+              color: #fff;
+              text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+              margin: 0;
+            }
+            h3 {
+              font-size: 15px;
+              color: #ffba55;
+              font-style: italic;
+              text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .RoadHead {
+    display: block;
+    background-size: initial;
+    .wrapper {
+      width: 100%;
+      .title {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: flex-start;
+        padding-top: 30px;
+        h2 {
+          font-size: 17px;
+          color: #ffd08b;
+          margin: 0;
+          padding: 0;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+          font-style: italic;
+        }
+      }
+      .Roadjanyuary {
+        display: block;
+        width: 100%;
+        .RoadFlex {
+          display: block;
+          text-align: center;
+          width: 100%;
+        }
+        .RoadText {
+          text-align: center;
+          display: block;
+          width: 97%;
+        }
+      }
+      .RoadArrow {
+        display: block;
+        text-align: center;
+        width: 100%;
+        img {
+          width: 87%;
+        }
+      }
+      .RoadArrowdisk {
+        display: block;
+        .RoadDisk {
+          display: block;
+          text-align: center;
+          width: 100%;
+          margin-top: 40px;
+          p {
+            color: #fff;
+            width: 83%;
+            display: block;
+            text-align: center;
+            margin: 14px auto;
+          }
+          h4 {
+            color: #ffba55;
+            width: 83%;
+            display: block;
+            text-align: center;
+            margin: 14px auto;
+          }
+        }
+      }
+      .India {
+        display: block;
+        padding: 30px;
+        .IndiaGirl {
+          display: block;
+          width: 100%;
+          img {
+            min-height: 0px;
+          }
+        }
+        .Blog {
+          display: block;
+          width: 100%;
+          .BLogText {
+            display: flex;
+            padding-top: 50px;
+            .Blogdisk {
+              display: block;
+              h1 {
+                font-size: 25px;
+              }
+            }
+            .BlogView {
+              display: block;
+              margin-top: -11px;
+              a {
+                color: #ffd08b;
+                border: 1px solid #ffd08b;
+                padding: 9px 10px;
+                font-size: 15px;
+                border-radius: 26px;
+                text-decoration: none;
+              }
+            }
+          }
+          .BlogMandir {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-top: 25px;
+            .BlogRam {
+              display: block;
+              width: 30%;
+
+              img {
+                width: 100%;
+              }
+            }
+            .BlogCulture {
+              display: block;
+              width: 55%;
+
+              h2 {
+                font-size: 13px;
+                font-style: italic;
+                color: #fff;
+                text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+              }
+              h3 {
+                font-size: 11px;
+                color: #ffba55;
+                font-style: italic;
+                text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

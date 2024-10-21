@@ -1,0 +1,109 @@
+.Head {
+  background-image: url("https://www.digitalrammandir.com/wp-content/uploads/2024/01/section1-1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  .wrapper {
+    width: 1150px;
+    margin: auto;
+    .HeadText {
+      display: block;
+      text-align: center;
+      .HeadDisk {
+        display: block;
+        text-align: center;
+
+        img {
+          width: 45%;
+          margin-right: 225px;
+        }
+      }
+      .HeadDiskText {
+        display: block;
+
+        h1 {
+          font-size: 90px;
+          font-weight: bold;
+          color: #fff;
+          text-shadow: 3px 3px 0em rgba(0, 0, 0, 0.6);
+          font-style: italic;
+        }
+        h3 {
+          color: #ffd08b;
+          text-align: center;
+          font-size: 25px;
+          font-weight: 600;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+          font-style: italic;
+        }
+      }
+
+      .HeadButton {
+        background: url(https://digitalrammandir.com/wp-content/uploads/2023/12/btn-bg.png)
+          no-repeat;
+        background-size: 100%;
+        display: flex !important;
+        max-width: 275px;
+        height: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 30px;
+        button {
+          font-size: 22px;
+          font-weight: 600;
+          background: none;
+          border: none;
+          color: #fff;
+          margin-top: -44px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .Head {
+    width: 100%;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 70% 100%;
+    .wrapper {
+      width: 100%;
+      .HeadText {
+        display: block;
+        .HeadDisk {
+          display: block;
+          text-align: justify;
+          img {
+            width: 50%; // Adjusting image size for smaller screens
+          }
+        }
+        .HeadDiskText {
+          display: block;
+          text-align: center;
+          padding: 97px 0px;
+
+          h1 {
+            font-size: 41px;
+            margin-top: -71px;
+          }
+          h3 {
+            font-size: 25px;
+            padding: 20px;
+          }
+        }
+        .HeadButton {
+          max-width: 230px;
+          height: 64px;
+          button {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.About {
+  background-image: url(https://www.digitalrammandir.com/wp-content/uploads/2023/12/section2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  width: 100%;
+  .wrapper {
+    width: 1150px;
+    margin: auto;
+    .AboutDisk {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 120px;
+      .AboutFlex {
+        width: 48%;
+        display: block;
+      }
+      .AboutEnd {
+        width: 48%;
+        display: block;
+
+        h2 {
+          font-size: 60px;
+          color: #ffd08b;
+          line-height: 55px;
+          margin: 0;
+          padding: 0;
+          font-style: italic;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        }
+
+        p {
+          font-size: 22px;
+          font-weight: 500;
+          color: #ddd;
+          font-style: italic;
+          text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        }
+      }
+    }
+    .Vision {
+      padding-top: 120px;
+      display: block;
+      .VisionImage {
+        display: block;
+        text-align: center;
+        .title {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          align-items: flex-start;
+          padding-top: 30px;
+          h2 {
+            font-size: 17px;
+            color: #ffd08b;
+            margin: 0;
+            padding: 0;
+            text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+            font-style: italic;
+          }
+        }
+      }
+      p {
+        font-size: 22px;
+        font-weight: 500;
+        color: #ddd;
+        font-style: italic;
+        text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+      }
+    }
+    .ImageCarousal {
+      display: block;
+      width: 1150px;
+      margin: 0 auto;
+      padding: 30px 0px;
+      .ImageDisk {
+        width: 100%;
+        img {
+          width: 100%;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .About {
+    width: 100%;
+
+    background-position: left bottom 0px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+    .wrapper {
+      width: 100%;
+      .AboutDisk {
+        display: block;
+        padding: 30px;
+        .AboutFlex {
+          display: none;
+        }
+        .AboutEnd {
+          width: 100%;
+        }
+      }
+      .Vision {
+        display: block;
+        margin-top: -120px;
+        .VisionImage {
+          display: block;
+          text-align: center;
+          .title {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: flex-start;
+            padding-top: 30px;
+            h2 {
+              font-size: 17px;
+              color: #ffd08b;
+              margin: 0;
+              padding: 0;
+              text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0, 0.97);
+              font-style: italic;
+            }
+          }
+        }
+        p {
+          padding: 30px;
+        }
+      }
+
+      .ImageCarousal {
+        width: 81%;
+      }
+    }
+  }
+}

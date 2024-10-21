@@ -1,0 +1,287 @@
+.LastDisk {
+  background-image: url("https://dvf7opio6knc7.cloudfront.net/satyugImages/login-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+
+  .wrapper {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    z-index: 999;
+
+    &::before {
+      position: fixed;
+      top: 0;
+      content: "";
+      width: 100%;
+      background-image: url("https://dvf7opio6knc7.cloudfront.net/satyugImages/login-bg-overlay.webp");
+      height: 100%;
+      left: 0;
+    }
+
+    .LastFlex {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 15px;
+      .LastImg {
+        width: 45%;
+        display: block;
+        position: relative;
+        z-index: 99;
+
+        .LastPick {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 26%;
+            display: block;
+          }
+        }
+
+        .Rain {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        .formdisk {
+          position: relative;
+          z-index: 99;
+          display: block;
+          padding-bottom: 20px;
+
+          .FormDisk {
+            display: flex;
+            align-items: center;
+            label {
+              color: #ffba55;
+              text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+              font-style: italic;
+              font-size: "22px";
+              font-weight: 600;
+              width: 25%;
+              display: block;
+            }
+            .formbox {
+              margin-top: 15px;
+              width: 100%;
+              input {
+                border: none;
+                background: none;
+                outline: none;
+                color: #fff;
+                font-size: 17px;
+                background-color: rgba(0, 0, 0, 0.6);
+                height: 45px;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding-inline-start: 10px;
+                width: 100%;
+                &:focus {
+                  border: solid 1px #ffba55;
+                }
+              }
+              .error {
+                color: red;
+                font-size: 15px;
+                font-weight: 500;
+                display: flex;
+                /* text-align: center; */
+                justify-content: flex-start;
+                margin-left: 88px;
+              }
+            }
+          }
+
+          .SubmitDisk {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+
+            &::before {
+              background: linear-gradient(
+                270deg,
+                #fff6c400,
+                #fff6c4 50%,
+                #fff6c400
+              );
+              content: "";
+              height: 2px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-50%);
+              width: 38%;
+            }
+
+            &::after {
+              background: linear-gradient(
+                270deg,
+                #fff6c400,
+                #fff6c4 50%,
+                #fff6c400
+              );
+              content: "";
+              height: 2px;
+              left: 50%;
+              bottom: 19px;
+              position: absolute;
+              transform: translateX(-50%);
+              width: 38%;
+            }
+            img {
+              height: 30px;
+              width: 30px;
+              margin-top: 9px;
+
+              transition: transform 0.3s ease;
+            }
+
+            button {
+              background: none;
+              border: none;
+              color: #ffba55;
+              font-size: 23px;
+              font-weight: 600;
+              height: 50px;
+              background-image: url("https://dvf7opio6knc7.cloudfront.net/satyugImages/secondary-btn.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 215px;
+            }
+            &:hover img:first-of-type {
+              transform: translateX(-20px);
+            }
+            &:hover img:last-of-type {
+              transform: translateX(20px);
+            }
+          }
+        }
+      }
+    }
+
+    .Safe {
+      display: flex;
+      justify-content: center;
+
+      h3 {
+        text-shadow: 0.03em 0.07em 0.15em rgba(0, 0, 0);
+        font-style: italic;
+        font-size: 19px;
+        font-weight: 600;
+        color: #ffba55;
+      }
+    }
+
+    .LastVideo {
+      width: 53%;
+      display: block;
+      position: relative;
+      z-index: 99;
+      height: 100vh;
+
+      video {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    .Muted {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+
+      button {
+        background: none;
+        border: solid 2px #ffba55;
+        padding: 12px 11px;
+        border-radius: 50px;
+        outline: none;
+
+        i {
+          color: #ddd;
+          font-size: 25px;
+        }
+      }
+    }
+    .Back {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      button {
+        background-color: none;
+        border: none;
+        width: 90px;
+        height: 30px;
+        background-color: #ffba55;
+        color: #000;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 600;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .LastDisk {
+    width: 100%;
+    display: block;
+    .wrapper {
+      width: 100%;
+      .LastFlex {
+        display: block;
+        .LastImg {
+          width: 100%;
+          .LastPick {
+            display: flex;
+            justify-content: center;
+          }
+          .formdisk {
+            display: block;
+
+            .FormDisk {
+              label {
+                width: 30%;
+                font-size: 14px;
+              }
+              .formbox {
+                input {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .Safe {
+            display: block;
+            text-align: center;
+            width: 77%;
+            margin: auto;
+            h3 {
+              font-size: 18px;
+            }
+          }
+        }
+        .LastVideo {
+          width: 100%;
+          position: relative;
+          z-index: 99;
+          video {
+            object-fit: contain;
+            width: 100%;
+            height: 135vh;
+          }
+        }
+      }
+    }
+  }
+}
