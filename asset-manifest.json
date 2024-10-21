@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ShreeHuman/static/css/main.c5ab5b7f.css",
-    "main.js": "/ShreeHuman/static/js/main.5067081b.js",
+    "main.css": "/ShreeHuman/static/css/main.92db3246.css",
+    "main.js": "/ShreeHuman/static/js/main.da30ccd0.js",
     "static/media/ftr-logo.png": "/ShreeHuman/static/media/ftr-logo.e146af2784bdd60d52c6.png",
-    "static/media/rain-removebg-preview.png": "/ShreeHuman/static/media/rain-removebg-preview.a02d497335991293a260.png",
+    "static/media/drop-removebg-preview.png": "/ShreeHuman/static/media/drop-removebg-preview.dee1723cadb1cc9d8b2c.png",
     "index.html": "/ShreeHuman/index.html",
-    "main.c5ab5b7f.css.map": "/ShreeHuman/static/css/main.c5ab5b7f.css.map",
-    "main.5067081b.js.map": "/ShreeHuman/static/js/main.5067081b.js.map"
+    "main.92db3246.css.map": "/ShreeHuman/static/css/main.92db3246.css.map",
+    "main.da30ccd0.js.map": "/ShreeHuman/static/js/main.da30ccd0.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5ab5b7f.css",
-    "static/js/main.5067081b.js"
+    "static/css/main.92db3246.css",
+    "static/js/main.da30ccd0.js"
   ]
 }
