@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ShreeHuman/static/css/main.74fa33ab.css",
+    "main.css": "/ShreeHuman/static/css/main.c5ab5b7f.css",
     "main.js": "/ShreeHuman/static/js/main.5067081b.js",
     "static/media/ftr-logo.png": "/ShreeHuman/static/media/ftr-logo.e146af2784bdd60d52c6.png",
     "static/media/rain-removebg-preview.png": "/ShreeHuman/static/media/rain-removebg-preview.a02d497335991293a260.png",
     "index.html": "/ShreeHuman/index.html",
-    "main.74fa33ab.css.map": "/ShreeHuman/static/css/main.74fa33ab.css.map",
+    "main.c5ab5b7f.css.map": "/ShreeHuman/static/css/main.c5ab5b7f.css.map",
     "main.5067081b.js.map": "/ShreeHuman/static/js/main.5067081b.js.map"
   },
   "entrypoints": [
-    "static/css/main.74fa33ab.css",
+    "static/css/main.c5ab5b7f.css",
     "static/js/main.5067081b.js"
   ]
 }
