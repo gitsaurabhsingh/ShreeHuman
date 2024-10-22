@@ -1,26 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Style from "./LastVideo.module.scss";
 import Barish from "../img/drop-removebg-preview.png";
 interface ILast {
   lastVideo: any;
   setLastVideo: any;
-  handleBackclick: any;
 }
 
-const LastVideo: React.FC<ILast> = ({
-  lastVideo,
-  setLastVideo,
-  handleBackclick,
-}) => {
+const LastVideo: React.FC<ILast> = ({ lastVideo, setLastVideo }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isVoice, setIsVoice] = useState(false);
 
   const toggleMute = () => {
     if (videoRef.current) {
-      setIsMuted((prev) => !prev);
-      if (videoRef.current) {
-        videoRef.current.muted = !isMuted;
-      }
+      const newMutedState = !videoRef.current.muted;
+      setIsVoice(newMutedState);
+      videoRef.current.muted = newMutedState;
+      console.log("Mute state changed to:", newMutedState);
     }
   };
 
@@ -112,8 +107,8 @@ const LastVideo: React.FC<ILast> = ({
                       <label>Whatsapp :</label>
                       <div className={Style.formbox}>
                         <input
-                          type="text"
-                          placeholder="Enter Your Whatsapp"
+                          type="number"
+                          placeholder="Enter Your Whatsapp Number"
                           name="name"
                           onChange={(e) => setWhatsapp(e.target.value)}
                         />
@@ -160,20 +155,19 @@ const LastVideo: React.FC<ILast> = ({
               </div>
               <div className={Style.Muted} onClick={toggleMute}>
                 <button>
-                  {isMuted ? (
+                  {isVoice ? (
                     <i className="fa-solid fa-volume-xmark"></i>
                   ) : (
                     <i className="fa-solid fa-volume-high"></i>
                   )}
                 </button>
               </div>
-              <div className={Style.Back} onClick={handleBackclick}>
+              <div className={Style.Back}>
                 <h2>
                   <img
                     src="https://dvf7opio6knc7.cloudfront.net/satyugImages/left-arrow.png"
                     alt=""
                   />
-                  Back
                 </h2>
               </div>
             </div>
