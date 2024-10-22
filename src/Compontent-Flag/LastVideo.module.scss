@@ -7,7 +7,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
 
   .wrapper {
     width: 1000px;
@@ -218,6 +217,7 @@
       position: absolute;
       top: 19px;
       right: 20px;
+      z-index: 99;
 
       button {
         background: none;
