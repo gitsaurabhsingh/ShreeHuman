@@ -12,10 +12,9 @@ const LastVideo: React.FC<ILast> = ({ lastVideo, setLastVideo }) => {
 
   const toggleMute = () => {
     if (videoRef.current) {
-      const newMutedState = !videoRef.current.muted;
-      setIsVoice(newMutedState);
+      const newMutedState = !isVoice;
       videoRef.current.muted = newMutedState;
-      console.log("Mute state changed to:", newMutedState);
+      setIsVoice(newMutedState);
     }
   };
 
@@ -149,19 +148,11 @@ const LastVideo: React.FC<ILast> = ({ lastVideo, setLastVideo }) => {
                 <video ref={videoRef} autoPlay loop>
                   <source
                     src="https://dvf7opio6knc7.cloudfront.net/satyugvideos/BahumulyaWEBM.webm"
-                    type="video/mp4"
+                    type="video/webm"
                   ></source>
                 </video>
               </div>
-              <div className={Style.Muted} onClick={toggleMute}>
-                <button>
-                  {isVoice ? (
-                    <i className="fa-solid fa-volume-xmark"></i>
-                  ) : (
-                    <i className="fa-solid fa-volume-high"></i>
-                  )}
-                </button>
-              </div>
+
               <div className={Style.Back}>
                 <h2>
                   <img
@@ -169,6 +160,15 @@ const LastVideo: React.FC<ILast> = ({ lastVideo, setLastVideo }) => {
                     alt=""
                   />
                 </h2>
+              </div>
+              <div className={Style.Muted}>
+                <button onClick={toggleMute}>
+                  {isVoice ? (
+                    <i className="fa-solid fa-volume-xmark"></i>
+                  ) : (
+                    <i className="fa-solid fa-volume-high"></i>
+                  )}
+                </button>
               </div>
             </div>
           </div>
